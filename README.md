@@ -1,4 +1,4 @@
-# Pong
+# Game
 
 Create a simple game using reinforcement learning, a branch of machine learning. A good start would be a classic game like "Pong." Here's a project breakdown:
 
