@@ -1,19 +1,49 @@
 
+---
 
-1. **Environment Setup**:
-   - Use Python with libraries like TensorFlow or PyTorch for deep learning.
-   - Use OpenAI's Gym for game environments.
+# Avoid the Falling Obstacles Game
 
-2. **Project Structure**:
-   - `main.py`: Main script to run the game.
-   - `agent.py`: Defines the learning agent.
-   - `model.py`: Neural network model for the agent.
-   - `train.py`: Script to train the agent.
+## Overview
+This repository contains a Python script for a simple game titled "Avoid the Falling Obstacles," developed using Pygame. The game features a player who must dodge falling enemies. It includes a basic implementation of Q-learning for decision-making.
 
-3. **Execution Steps**:
-   - Install necessary libraries (`gym`, `tensorflow`/`pytorch`).
-   - Define the neural network model in `model.py`.
-   - Create the agent in `agent.py` that learns from the environment.
-   - Train the model in `train.py`.
-   - Run `main.py` to see the agent playing the game.
+## Requirements
+- Python 3.x
+- Pygame
+- NumPy
+
+## Installation
+To run this game, you need to install Python and the necessary libraries. You can install Pygame and NumPy using pip:
+
+```bash
+pip install pygame numpy
+```
+
+## Usage
+To play the game, clone this repository and run the script:
+
+```bash
+git clone [repository-url]
+cd [repository-directory]
+python avoid_falling_obstacles.py
+```
+
+## Game Description
+- The player is represented as a blue square at the bottom of the screen.
+- Enemies, represented as red squares, fall from the top of the screen.
+- The player can move left or right to avoid colliding with the enemies.
+- The game uses Q-learning for making decisions, with the player's actions (left, stay, right) based on the current state.
+
+## Q-Learning Implementation
+- The script includes a basic Q-learning algorithm to control the player.
+- The Q-table is initialized to zeros and updated as the game progresses.
+- Rewards are given for avoiding obstacles, and a large negative reward is given for collisions.
+
+## Future Enhancements
+- Improve the Q-learning algorithm for better decision-making.
+- Add more features like different levels, scores, and enhanced enemy behaviors.
+
+## License
+[MIT License](LICENSE)
+
+---
 
